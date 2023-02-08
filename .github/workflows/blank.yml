@@ -11,20 +11,19 @@ jobs:
       - name: Setup python 37
         uses: actions/setup-python@v4
         with:
-          python-version: 3.7
+          python-version: 3.7.x
       - name: Setup python 38
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: 3.8.x
       - name: Setup python 39
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9
+          python-version: 3.9.x
       - name: Setup python 310
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
-
+          python-version: 3.10.x
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"
